@@ -4,7 +4,7 @@
 We discuss the problem of computing Santa's optimal transportation network. 
 That is, starting from the North Pole we intend to find the optimal network for transporting the Christmas gifts to each city around the World.
 This is a hard NP-complete problem, and here we only provide a sub-optimal heuristic approach. A software solution is also included, and 
-freely accessible as a web application at: www.santa.com 
+freely accessible as a web application at: [www.santa.com ](https://mandrecut.github.io/santa_net/)
 
 ## Introduction
 
@@ -68,7 +68,7 @@ r_k = \frac{\sum_i p_i x_i}{\sum_i p_i}, \quad i \in C_k.
 $$
 
 After we have computed the location of the national and regional distribution centers, we can use the BOT algorithm [1] to compute the branching points and to find a sub-optimal distribution network. 
-The results are quite good as one can see in the web application demo at: www.santa.com
+The results are quite good as one can see in the web application demo at: https://mandrecut.github.io/santa_net/
 
 While the above approach does find a plausible sub-optimal distribution network, it also creates some more or less amusing "political" problems. 
 For example, the national distribution center of some countries may be located in other countries, or in non-territorial waters. 
