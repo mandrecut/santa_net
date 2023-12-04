@@ -29,10 +29,12 @@ $$
 $$
 
 Currently there are very efficient software solutions for this problem. However, we have identified several insurmountable obstacles:
- \item The TSP solution would require an impossible large sled to build (bigger than Noah's arch) in order to carry all the gifts, since in the TSP framework once the 
- delivery beggins, the sled must follow the optimal tour and it cannot return to the base. 
- \item The reindeer team has a limited horsepower and it cannot pull such a large sled.  
- \end{itemize} 
+ 
+ * The TSP solution would require an impossible large sled to build (bigger than Noah's arch) in order to carry all the gifts, since in the TSP framework once the 
+ delivery beggins, the sled must follow the optimal tour and it cannot return to the base.
+
+* The reindeer team has a limited horsepower and it cannot pull such a large sled.  
+
 We should mention that with each delivery the cargo becomes lighter, and at the last delivery it would be very light. 
 This observation may provide a theoretical incentive to adopt the TSP solution, however the question that remains unsolved so far is how to make the first delivery, since 
 at the beginning the cargo is so heavy, and it cannot be moved by the reindeers? 
