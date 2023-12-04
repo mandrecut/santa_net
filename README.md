@@ -12,6 +12,7 @@ freely accessible as a web application at: https://mandrecut.github.io/santa_net
 
 Christmas is approaching quickly and Santa Claus Organization (SCO) requires a flawless solution for its world-wide transportation and delivery problem. 
 That is, every Christmas the SCO must transport and deliver the gifts to the people in each city around the World, starting from its North Pole undisclosed location:) 
+In this problem we are given 141,182 cities around the world, with known location and population. 
 This is a challenging problem which requires maximum scalability from the elves team and the reindeer fleet, and so far the SCO has managed to keep the optimal transportation 
 plan secret for more than 1750 years.
 
