@@ -28,7 +28,7 @@ $$
 \pi^* = \text{arg}\min_{\pi} \sum_{n=0}^{N-2} d(x_{\pi(n)},x_{\pi(n+1)}) + d(x_{\pi(N-1),\pi(0)}).
 $$
 
-Currently there are very efficient software solutions for this problem []. However, we have identified several insurmountable obstacles:
+Currently there are very efficient software solutions for this problem. However, we have identified several insurmountable obstacles:
  \item The TSP solution would require an impossible large sled to build (bigger than Noah's arch) in order to carry all the gifts, since in the TSP framework once the 
  delivery beggins, the sled must follow the optimal tour and it cannot return to the base. 
  \item The reindeer team has a limited horsepower and it cannot pull such a large sled.  
@@ -37,3 +37,39 @@ We should mention that with each delivery the cargo becomes lighter, and at the 
 This observation may provide a theoretical incentive to adopt the TSP solution, however the question that remains unsolved so far is how to make the first delivery, since 
 at the beginning the cargo is so heavy, and it cannot be moved by the reindeers? 
 Therefore, we quickly abandoned this approach, as unrealistic and unfeasible. 
+
+## The BOT approach
+
+This approach is based on the algorithm developed in our previous work, which is a combination of greedy and tabu search [1]. 
+This algorithm has the advantage that it is deterministic and finite, and with each branching node added to the network the overall cost is guaranteed to decrease,   
+showing very good results in practical simulations. 
+
+The remaining question is therefore how to select the initial set of sources (distribution centers) for each country? 
+We consider a national distribution center which is at the center of (population) mass of the country. This can be easily computed since 
+we have the position and the population of the cities:
+
+$$
+x^*_0 = \frac{\sum_i p_i x_i}{\sum_i p_i},
+$$
+
+here $x_i$ is the location of the city and $p_i$ is the population. 
+In addition we also define several regional distribution centers $\{x^*_1,x^*_2,...,x^*_K\}$. Again, this is possible since we have 
+the location and population of each city. The number of centroids is empirically set to $K=\sqrt{N}+1$, and their position is given by the centroids solution of the weighted K-means clustering:
+
+$$
+\text{arg}\min_{\{x^*_1,x^*_2,...,x^*_K\}} \sum_k \sum_i p_i\Vert x_i - x^*_k\Vert^2,
+$$
+
+where the centroids $x^*_k$ are the center of mass of the clusters $C_k$:
+
+$$
+x^*_k = \frac{\sum_i p_i x_i}{\sum_i p_i}, \quad i \in C_k.
+$$
+
+After we have computed the location of the national and regional distribution centers, we can use the BOT algorithm \cite{key-1} to compute the branching points and to find a sub-optimal distribution network. 
+The results are quite good as one can see in the web application demo at: www.santa.com
+
+While the above approach does find a plausible sub-optimal distribution network, it also creates some more or less amusing "political" problems. 
+For example, the national distribution center of some countries may be located in other countries, or in non-territorial waters. 
+For example the national distribution center for Canada is located close to Marquette, Wisconsin, United States. 
+But this is OK, since most of the stuff Canadians buy is from Costco or Walmart anyway, so adding SCO to the suppliers list will not cause too much of a commotion. 
