@@ -23,11 +23,13 @@ and we illustrate our findings by developing a web application freely accessible
 ## The TSP approach
 Let us assume that $X=\{x_n \mid n=0,1,...,N-1\}$ is the set of all cities to be visited. Any permutation $\pi$ of the set of indexes $I=\{0,1,...,N-1\}$ is a 
 tour visiting all the cities. In the TSP framework the problem is to find the optimal permutation (tour) $\pi^*$ that minimizes the distance $d$ required to visit all the cities:
+
 $$
 \pi^* = \text{arg}\min_{\pi} \sum_{n=0}^{N-2} d(x_{\pi(n)},x_{\pi(n+1)}) + d(x_{\pi(N-1),\pi(0)}).
 \end{equation}
 Currently there are very efficient software solutions for this problem []. However, we have identified several insurmountable obstacles:
 $$
+
  \item The TSP solution would require an impossible large sled to build (bigger than Noah's arch) in order to carry all the gifts, since in the TSP framework once the 
  delivery beggins, the sled must follow the optimal tour and it cannot return to the base. 
  \item The reindeer team has a limited horsepower and it cannot pull such a large sled.  
