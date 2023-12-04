@@ -58,7 +58,7 @@ In addition we also define several regional distribution centers $\{x^*_1,x^*_2,
 the location and population of each city. The number of centroids is empirically set to $K=\sqrt{N}+1$, and their position is given by the centroids solution of the weighted K-means clustering:
 
 $$
-\text{arg} \min_{ \{ x^*_1,x^*_2,...,x^*_K \} } \sum_k \sum_i p_i \Vert x_i - x^*_k \Vert^2,
+\text{arg} \min_{ \{ x^*_1,x^*_2,...,x^*_K \} } \sum_k \sum_i p_i || x_i - x^*_k ||^2,
 $$
 
 where the centroids $x^*_k$ are the center of mass of the clusters $C_k$:
