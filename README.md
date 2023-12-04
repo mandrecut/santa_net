@@ -43,8 +43,7 @@ Therefore, we quickly abandoned this approach, as unrealistic and unfeasible.
 ## The BOT approach
 
 This approach is based on the algorithm developed in our previous work, which is a combination of greedy and tabu search [1]. 
-This algorithm has the advantage that it is deterministic and finite, and with each branching node added to the network the overall cost is guaranteed to decrease,   
-showing very good results in practical simulations. 
+This algorithm has the advantage that it is deterministic and finite, and with each branching node added to the network the overall cost is guaranteed to decrease, showing very good results in practical simulations. 
 
 The remaining question is therefore how to select the initial set of sources (distribution centers) for each country? 
 We consider a national distribution center which is at the center of (population) mass of the country. This can be easily computed since 
