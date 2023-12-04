@@ -54,7 +54,7 @@ x^*_0 = \frac{\sum_i p_i x_i}{\sum_i p_i},
 $$
 
 here $x_i$ is the location of the city and $p_i$ is the population. 
-In addition we also define several regional distribution centers $X^* =\{x^*_1,x^*_2,...,x^*_K\}$. Again, this is possible since we have 
+In addition we also define several regional distribution centers $X^{*} =\{x^{*}_1,x^{*}_2,...,x^{*}_K\}$. Again, this is possible since we have 
 the location and population of each city. The number of centroids is empirically set to $K=\sqrt{N}+1$, and their position is given by the centroids solution of the weighted K-means clustering:
 
 $$
@@ -67,7 +67,7 @@ $$
 x^*_k = \frac{\sum_i p_i x_i}{\sum_i p_i}, \quad i \in C_k.
 $$
 
-After we have computed the location of the national and regional distribution centers, we can use the BOT algorithm \cite{key-1} to compute the branching points and to find a sub-optimal distribution network. 
+After we have computed the location of the national and regional distribution centers, we can use the BOT algorithm [1] to compute the branching points and to find a sub-optimal distribution network. 
 The results are quite good as one can see in the web application demo at: www.santa.com
 
 While the above approach does find a plausible sub-optimal distribution network, it also creates some more or less amusing "political" problems. 
