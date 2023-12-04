@@ -79,7 +79,7 @@ But this is OK, since most of the stuff Canadians buy is from Costco or Walmart 
 
 We have described a heuristic branching method approach for the SCO distribution network. 
 The method is based on a deterministic algorithm implementing a combination of (regularized) linear programming in the first stage, followed by a greedy tabu search in the second stage, exploiting 
-a local branching optimization approach \cite{key-1}. 
+a local branching optimization approach [1]. 
 An application illustrating the method is also provided at: www.santa.com
 
 ## References
