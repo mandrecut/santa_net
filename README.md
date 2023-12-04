@@ -4,7 +4,7 @@
 We discuss the problem of computing Santa's optimal transportation network. 
 That is, starting from the North Pole we intend to find the optimal network for transporting the Christmas gifts to each city around the World.
 This is a hard NP-complete problem, and here we only provide a sub-optimal heuristic approach. A software solution is also included, and 
-freely accessible as a web application at: [www.santa.com ](https://mandrecut.github.io/santa_net/)
+freely accessible as a web application at: https://mandrecut.github.io/santa_net/
 
 ## Introduction
 
