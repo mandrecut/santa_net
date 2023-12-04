@@ -54,11 +54,11 @@ x^*_0 = \frac{\sum_i p_i x_i}{\sum_i p_i},
 $$
 
 here $x_i$ is the location of the city and $p_i$ is the population. 
-In addition we also define several regional distribution centers $\{x^*_1,x^*_2,...,x^*_K\}$. Again, this is possible since we have 
+In addition we also define several regional distribution centers $X^*=\{x^*_1,x^*_2,...,x^*_K\}$. Again, this is possible since we have 
 the location and population of each city. The number of centroids is empirically set to $K=\sqrt{N}+1$, and their position is given by the centroids solution of the weighted K-means clustering:
 
 $$
-\text{arg} \min_{x^*_1,x^*_2,...,x^*_K}
+\text{arg} \min_{X^*}
 $$
 
 where the centroids $x^*_k$ are the center of mass of the clusters $C_k$:
