@@ -83,4 +83,4 @@ An application illustrating the method is also provided at: www.santa.com
 
 ## References
 
-1. M. Andrecut, \textit{Heuristic Optimal Transport in Branching Networks}, Optimization and Control https://arxiv.org/abs/2311.06650 (2023).
+1. M. Andrecut, Heuristic Optimal Transport in Branching Networks, Optimization and Control https://arxiv.org/abs/2311.06650 (2023).
