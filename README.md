@@ -1,5 +1,4 @@
 # Santa's Optimal Transportation Network 
-## a not too serious approach
 
 ## Abstract
 We discuss the problem of computing Santa's optimal transportation network. 
