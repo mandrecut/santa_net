@@ -73,3 +73,14 @@ While the above approach does find a plausible sub-optimal distribution network,
 For example, the national distribution center of some countries may be located in other countries, or in non-territorial waters. 
 For example the national distribution center for Canada is located close to Marquette, Wisconsin, United States. 
 But this is OK, since most of the stuff Canadians buy is from Costco or Walmart anyway, so adding SCO to the suppliers list will not cause too much of a commotion. 
+
+## Conclusion
+
+We have described a heuristic branching method approach for the SCO distribution network. 
+The method is based on a deterministic algorithm implementing a combination of (regularized) linear programming in the first stage, followed by a greedy tabu search in the second stage, exploiting 
+a local branching optimization approach \cite{key-1}. 
+An application illustrating the method is also provided at: www.santa.com
+
+## References
+
+1. M. Andrecut, \textit{Heuristic Optimal Transport in Branching Networks}, Optimization and Control https://arxiv.org/abs/2311.06650 (2023).
