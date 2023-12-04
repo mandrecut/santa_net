@@ -61,10 +61,10 @@ $$
 \text{arg} \min_{R} \sum_k \sum_i p_i\Vert x_i - r_k\Vert^2,
 $$
 
-where the centroids $x^*_k$ are the center of mass of the clusters $C_k$:
+where the centroids $r_k$ are the center of mass of the clusters $C_k$:
 
 $$
-x^*_k = \frac{\sum_i p_i x_i}{\sum_i p_i}, \quad i \in C_k.
+r_k = \frac{\sum_i p_i x_i}{\sum_i p_i}, \quad i \in C_k.
 $$
 
 After we have computed the location of the national and regional distribution centers, we can use the BOT algorithm [1] to compute the branching points and to find a sub-optimal distribution network. 
