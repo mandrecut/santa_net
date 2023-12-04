@@ -18,7 +18,7 @@ heuristic approach. Initially we thought that the Traveling Salesman Problem (TS
 however we quickly dismissed this approach since it raises several logistic questions which we could not solve. 
 Finally we settled for a Branching Optimal Transportation (BOT) solution [1]. While this solution 
 is obviously sub-optimal, it has the advantage that it is relatively easy to compute and avoids the previously mentioned obstacles. We provide the details of our sub-optimal solution 
-and we illustrate our findings by developing a web application freely accessible at: www.santa.com 
+and we illustrate our findings by developing a web application freely accessible at: https://mandrecut.github.io/santa_net/
 
 ## The TSP approach
 Let us assume that $X=\{x_n \mid n=0,1,...,N-1\}$ is the set of all cities to be visited. Any permutation $\pi$ of the set of indexes $I=\{0,1,...,N-1\}$ is a 
