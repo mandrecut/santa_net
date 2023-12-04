@@ -1,5 +1,7 @@
 # Santa's Optimal Transportation Network 
 
+December 4, 2023
+
 ## Abstract
 We discuss the problem of computing Santa's optimal transportation network. 
 That is, starting from the North Pole we intend to find the optimal network for transporting the Christmas gifts to each city around the World.
