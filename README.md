@@ -4,9 +4,7 @@ December 4, 2023
 
 Data and code repository of the paper:
 
-M. Andrecut, 
-
-Heuristic Optimal Transport in Branching Networks, 
+M. Andrecut, Heuristic Optimal Transport in Branching Networks, 
 
 International Journal of Modern Physics C, 
 
